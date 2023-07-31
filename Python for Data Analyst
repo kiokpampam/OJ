@@ -1,0 +1,24 @@
+---Unit 1
+
+Format: .csv, .json, .xlsx, .hdf
+Path: https:// or Desktop,...
+
+#Import
+import panda as pd
+url = "..."
+df = pd.read_csv(url, [header = None] )
+
+df (print the entire)
+df.head(n) (first n rows)
+df.tail(n) (last n rows)
+
+#Replace default headers
+df.columns = headers
+headers = [ *list* ]
+
+#Exporting to CSV
+
+path = "link"
+df.to_csv(path)
+
+(đổi csv thành json, excel, sql là được file mới)
